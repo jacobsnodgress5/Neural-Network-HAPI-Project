@@ -3,4 +3,3 @@ torch
 numpy
 scipy
 matplotlib
-HITRAN-Application-Programming-Interface
