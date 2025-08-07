@@ -1,3 +1,8 @@
+import os
+print("Current directory:", os.getcwd())
+print("Files here:", os.listdir())
+
+
 from flask import Flask, request, jsonify
 from H2O_model_loader import predict_greatest_absorption
 
