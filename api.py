@@ -21,6 +21,10 @@ def predict():
                         'Standard Absorption Coefficient' : real_result})
     except Exception as e:
         return jsonify({'error': str(e)}), 400
+
+import os
+
+port = int(os.environ.get("PORT", 10000))
         
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(host="0.0.0.0", port=port)
